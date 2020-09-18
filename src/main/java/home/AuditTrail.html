@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket>
+    <head>
+    </head>
+    <body>
+
+        <wicket:extend>
+            <br></br>
+            <div align="center">Audit trail Interface</div>
+            <br></br>
+
+            <span wicket:id="feedback">feedback messages will be put here</span>
+            <bt></bt>
+
+            <form wicket:id="userForm">
+                <p>
+                    Search String : <input wicket:id="search" type="text" size="20" />
+                </p>
+                <input type="submit" value="Search" />
+            </form>
+
+            <bt></bt>
+
+
+            <span wicket:id="navigator">[dataview navigator]</span>
+            <p>(listed in descending order)</p>
+
+            <table cellspacing="0" class="dataview" width="1000px" style="word-break: break-all">
+
+                <th align="left" width="50px">No.</th>
+                <th align="left" width="200px">User ID</th>
+                <th align="left" width="200px">IP Address</th>
+                <th align="left" width="300px">User Agent</th>
+                <th align="left" width="150px">Computer ID</th>
+                <th align="left" width="100px">Time</th>
+                <th align="left" width="300">Activity</th>
+
+                <tbody>
+                    <tr wicket:id="audit">                        
+                        <td><span wicket:id="no"></span></td>
+                        <td><span wicket:id="userid"></span></td>
+                        <td><span wicket:id="ip"></span></td>
+                        <td><span wicket:id="agent"></span></td>
+                        <td><span wicket:id="computer"></span></td>
+                        <td><span wicket:id="time"></span></td>
+                        <td width="25%"><span wicket:id="activity"></span></td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </wicket:extend>
+
+    </body>
+</html>

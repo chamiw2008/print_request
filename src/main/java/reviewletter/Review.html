@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title></title>
+    </head>
+    <body>
+
+        <wicket:extend>
+            <br></br>
+            <p align="center">Review/Respond Print Requests</p>
+
+            <form wicket:id="f">
+                <span wicket:id="feedback" Style="color: red">feedback messages will be put here</span>
+
+
+                <table cellspacing="0" width="900px">
+
+                    <tr>
+                        <th>Parameter</th>
+                        <td align="center">Value</td>
+                    </tr>
+
+                    <tr>
+                        <th align="left" width="300px">Patient ID</th>
+                        <td><span wicket:id="ptid"></span></td>
+                    </tr>
+
+                    <tr>
+                        <th align="left" >Patient Name/BHT/Ward/Gender</th> 
+                        <td><span wicket:id="name"></span></td>
+                    </tr>
+                    <tr>
+                        <th align="left" >Study Modality/Description</th>
+                        <td><span wicket:id="desc"></span></td>
+                    </tr>
+                    <tr>
+                        <th align="left" >Study Date</th> 
+                        <td><span wicket:id="studydate"></span></td>
+                    </tr>
+
+                    <tr>
+                        <th align="left" >Unit</th> 
+                        <td><span wicket:id="unit"></span></td>
+                    </tr>
+
+                    <tr>
+                        <th align="left" >Ordering Clinician</th> 
+                        <td><span wicket:id="clinician"></span></td>
+                    </tr>
+
+                    <tr>
+
+                        <th align="left" >Priority</th>
+                        <td><span wicket:id="priority"></span></td>
+                    </tr>
+
+                    <tr>
+                        <th align="left" >Print Request Date</th>
+                        <td><span wicket:id="reqdate"></span></td>
+                    </tr>
+
+                    <tr>
+                        <th align="left" >Remarks</th> 
+                        <td><span wicket:id="remarks"></span></td>
+                    </tr>
+
+                    <tr>
+                        <th align="center" >Respond</th> 
+                        <th></th> 
+                    </tr>
+
+                    <tr>
+                        <td>Status Update*</td>
+                        <td><select wicket:id="update"></select></td>
+                    </tr>
+
+                    <tr>
+                        <td>Status  Update Remarks</td>
+                        <td><input wicket:id="updateremarks"></input></td>
+
+                    </tr>
+
+
+                </table>
+
+                <div align="left">
+                    <input style="width: 200px" align-content: type="submit" value="Update" />
+                </div>
+
+            </form>
+
+        </wicket:extend>
+
+    </body>
+</html>

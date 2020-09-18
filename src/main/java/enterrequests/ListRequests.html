@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:wicket>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title></title>
+    </head>
+    <body>
+
+
+        <wicket:panel>
+            <span wicket:id="navigator">[dataview navigator]</span>
+
+            <table cellspacing="0" class="dataview" width="1000px" style="font-size: small">
+
+                <th align="left" width="50px">No.</th>
+                <th align="left" width="150px">Status</th>
+                <th align="left" width="100px">View/Respond</th>
+                <th align="left" width="100px">Patient ID</th>
+                <th align="left" width="350px">Patient Name/BHT/Ward/Gender</th> 
+                <th align="left" width="200px">Study Modality/Description</th>
+                <th align="left" width="200px">Study Date</th> 
+                <th align="left" width="300px">Unit</th> 
+                <th align="left" width="200px">Ordering Clinician</th>               
+                <th align="left" width="100px">Priority</th>
+                <th align="left" width="200px">Print Request Date</th>             
+                <th align="left" width="300px">Reason for ordering</th>
+                <th align="left" width="300px">Status Update-Date</th> 
+                <th align="left" width="300px">Remarks</th>
+
+                <tbody>
+                    <tr wicket:id="institutions">                        
+                        <td><span wicket:id="no"></span></td>
+                        <td><b><span wicket:id="status"></span></b></td>
+
+                        <td><span wicket:id="view"></span></td>
+
+                        <td><span wicket:id="ptid"></span></td>
+                        <td><span wicket:id="name"></span></td>
+                        <td><span wicket:id="desc"></span></td>
+                        <td><span wicket:id="studydate"></span></td>
+
+
+                        <td><span wicket:id="unit"></span></td>
+                        <td><span wicket:id="clinician"></span></td>
+
+                        <td><span wicket:id="priority"></span></td>
+                        <td><span wicket:id="reqdate"></span></td>
+                        <td><span wicket:id="remarks"></span></td>
+
+                        <td><span wicket:id="statusdate"></span></td>
+                        <td><span wicket:id="statusremarks"></span></td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <br></br>
+
+        </wicket:panel>
+    </body>
+</html>

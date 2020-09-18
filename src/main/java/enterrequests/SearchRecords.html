@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket>
+    <head>
+    </head>
+    <body>
+
+        <wicket:extend>
+
+            <br></br>
+
+
+            <span wicket:id="feedback">feedback messages will be put here</span>
+            <bt></bt>
+
+            <form wicket:id="userForm">
+
+
+                <p>
+                    <b style="font-weight: bold">Filter by completion status :</b>
+                    Pending >
+                    <input type="checkbox" wicket:id="pending" />
+                    
+                    Completed >
+                    <input type="checkbox" wicket:id="completed" />
+                    
+                </p>
+                
+                <p>
+                    <b style="font-weight: bold">Filter by priority            :</b>
+                    Routine >
+                    <input type="checkbox" wicket:id="chkr" />
+
+                    Urgent >
+                    <input type="checkbox" wicket:id="chku" />
+
+                   
+                </p>
+                <p></p>
+
+                <input style="width: 200px" type="submit" value="Apply Filter" />
+            </form>
+
+            <bt></bt>
+
+            <p style="font-weight: bold">Search Results</p>
+            <span wicket:id="panel"></span>
+
+
+        </wicket:extend>
+
+    </body>
+</html>

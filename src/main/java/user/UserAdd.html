@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket>
+    <head>
+    </head>
+    <body>
+
+        <wicket:extend>
+
+            <br></br>
+            <div align="center">Create new system user</div>
+            <br></br>
+            <p align="justify">All the fields marked with asterix mark (*) are mandatory fields 
+                and thus needs to be filled for each user.</p>
+
+            <span wicket:id="feedback" Style="color: red">feedback messages will be put here</span>
+
+            <form wicket:id="form">
+
+                <table width="100%" align="left">
+
+                    <tr>
+                        <th width="20%">Field</th>
+                        <th width="40%"></th>
+                        <th width="40%">Description</th>
+
+                    </tr>
+
+                    <tr>
+                        <td width="30%" >Unit*</td>
+                        <td width="30%"><select wicket:id="inst"></select></td>
+                        <td width="40%"></td>
+                    </tr>
+                    <tr>
+                        <td>Name*</td>
+                        <td><input wicket:id="name" type="text" /></td>
+                        <td><i>Please include title with the name and initials (Dr./Mr./Mrs./Ms.) </i></td>
+                    </tr>
+                    <tr>
+                        <td>Designation*</td>
+                        <td><input wicket:id="desig" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile 1</td>
+                        <td><input wicket:id="tel1" type="text" /></td>
+                        <td><i>Ensure to include mobile numbers only.</i></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile 2</td>
+                        <td><input wicket:id="tel2" type="text" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>Email (Official)</td>
+                        <td><input wicket:id="email1" type="text" /></td>
+                        <td><i>Ensure to include the xxx@health.gov.lk official email where available</i></td>
+                    </tr>                    
+                    <tr>
+                        <td>Email (Other)</td>
+                        <td><input wicket:id="email2" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>User name*</td>
+                        <td><input wicket:id="un" type="text" /></td>
+                        <td><i>User name should be in a format that can be easily remembered, and be linked with the user</i></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>12341234</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Admin Account*</td>
+                        <td><select wicket:id="uAdmin"></select></td>
+                        <td><i>Admin user will have access to adding institutions, users and requests.
+                            </i></td>
+                    </tr>
+
+                </table>
+                <p align="justify">On submitting the form please wait till the web page refreshes.</p>
+
+                <div align="center">
+                    <input type="submit" value="Add User" />
+                </div>
+
+            </form>
+
+            <span wicket:id="panel"></span>
+
+        </wicket:extend>
+
+    </body>
+</html>

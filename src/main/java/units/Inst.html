@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket>
+    <head>
+    </head>
+    <body>
+
+        <wicket:extend>
+
+            <br></br>
+            <div align="center"> Create new unit</div>
+            <br></br>
+
+            <span wicket:id="feedback">feedback messages will be put here</span>
+
+
+            <form wicket:id="form">
+
+                <table width="100%" align="left">
+
+                    <tr>
+
+                        <th width="20%">Field</th>
+                        <th width="40%"></th>
+                        <th width="40%">Description</th>
+                    </tr>
+                    <tr>
+
+                        <td>Name of Unit</td>
+                        <td><input wicket:id="institutions" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Parent Unit</td>
+                        <td><select wicket:id="parent"></select></td>
+                        <td><i>The parent unit is the immediate superior unit
+                                to which it's administratively responsible.</i></td>
+                    </tr>                  
+
+                </table>
+
+                <br></br>
+                <p align="justify">On submitting the form please wait till the web page refreshes. </p>
+
+
+                <div align="center">
+                    <input type="submit" value="Add Unit" />
+                </div>
+            </form>
+
+            <span wicket:id="panel"></span>
+
+        </wicket:extend>
+
+    </body>
+</html>

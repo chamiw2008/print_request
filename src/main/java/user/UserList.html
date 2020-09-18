@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:wicket>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title></title>
+    </head>
+    <body>
+        
+        <wicket:panel>
+
+            <table cellspacing="0" class="dataview" width="1200px" >
+
+                <th align="left">No.</th>
+                <th align="left">Name</th>
+                <th align="left">Desig</th>
+                <th align="left">Unit/Inst.</th> 
+                <th align="left">Mobile 1</th>
+                <th align="left">Mobile 2</th>
+                <th align="left">Email 1</th>
+                <th align="left">Email 2</th>
+                <th align="left">Admin</th>
+                <th align="left">Username</th>        
+                <th align="left">Default Password</th>   
+                <th align="left">Reset Password</th> 
+                <th align="left">Delete</th>
+
+                <tbody>
+                    <tr wicket:id="institutions">                        
+                        <td width="50px"><span wicket:id="no"></span></td>
+                        <td width="200px"><span wicket:id="name"></span></td>
+                        <td width="200px"><span wicket:id="desig"></span></td>
+                        <td width="200px"><span wicket:id="inst"></span></td>
+                        <td width="100px"><span wicket:id="tel1"></span></td>
+                        <td width="100px"><span wicket:id="tel2"></span></td>                        
+                        <td width="100px"><span wicket:id="email1"></span></td>
+                        <td width="100px"><span wicket:id="email2"></span></td>
+                        <td width="100px"><span wicket:id="admin"></span></td>
+                        <td width="100px"><span wicket:id="un"></span></td>
+                       
+                        <td width="100px"><span wicket:id="default"></span></td>
+
+                        <td width="100px"><span wicket:id="reset"></span></td>
+                        <td width="100px"><span wicket:id="inactivate"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br></br>
+
+        </wicket:panel>
+    </body>
+</html>

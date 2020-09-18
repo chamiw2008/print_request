@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket>
+    <head>
+    </head>
+    <body>
+
+        <wicket:extend>
+
+            <br></br>    
+            <br></br> 
+            <div align="center">
+
+                <img align="center" wicket:id="gov-logo"/>
+                <br></br>
+            </div>
+
+            <div align="center">
+
+                <br>Radiology Film Print Management System</br>
+                <b>Castle Street Hospital for Women, Ministry of Health, Nutrition and Indigenous Medicine, Sri Lanka</b>
+                <br></br>
+                <p><i>- For a meaningful implementation of PACS</i></p>
+
+            </div>
+            <p></p>
+
+
+
+
+            <table>
+
+                <tr width="100%">
+
+                    <td width="30%">
+
+                        <div align="center">
+
+                            <img align="middle" wicket:id="systemlogo"/>
+
+                            <br></br>
+                        </div>
+
+                    </td>
+
+                    <td width="40%">
+
+
+
+                        The Radiology Film Print Management System was developed with the intention of 
+                        promoting film-less radiology at Castle Street Hospital for Women while providing
+                        film printing capability through this paperless request system for ordering films for
+                        uses such as transferring of patients outside the hospital, teaching purposes or legal purposes.                                
+
+
+
+                    </td>
+                    <td width="30%">
+
+
+                        <form wicket:id="f" method="post">
+
+                            <table>
+                                <div align="center">
+                                    <br></br>
+                                    <p align="center">Login credentials</p>
+                                </div>
+
+                                <tr>
+                                    <td>Username</td>
+                                    <td><input type="text" wicket:id ="un"></input></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Password</td>
+                                    <td><input type="password" wicket:id ="pw"></input></td>
+                                </tr>
+
+
+                            </table>
+                            <p align="center">
+                                <input  type="submit" value="  Login  " ></input>
+                            </p>
+                        </form>
+
+
+                        <span wicket:id="message" Style="color: red">message</span>
+                        <div align="center">
+                            <span wicket:id="logout" Style="color: red" >message</span>
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br></br>
+            <span wicket:id="feedback" Style="color: red" align="center">feedback messages will be put here</span>
+
+        </wicket:extend>
+    </body>
+</html>
